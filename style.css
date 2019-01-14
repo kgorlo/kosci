@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+    background: radial-gradient(transparent 75%, green 100%),
+        linear-gradient(135deg,
+        green,
+        lightgreen,
+        green);
+}
+
+.gracz1,
+.gracz2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* border: 1px dotted black; */
+}
+
+.dices1,
+.dices2 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    /* border: 1px dotted black; */
+}
+
+.dices1 {
+    top: 45px;
+    left 25px;
+}
+
+.dices2 {
+    top: 45px;
+    right 25px;
+}
+
+.gracz1 {
+    top: 25px;
+    left: 25px;
+}
+
+.pkt1,
+.pkt2 {
+    position: absolute;
+    bottom: 19px;
+    left: 125px;
+}
+
+.gracz2 {
+    top: 25px;
+    right: 25px;
+}
+
+.wynik {
+    position: absolute;
+    width: 650px;
+    font-size: 20px;
+    height: 40px;
+    /* border: 1px dotted black; */
+    bottom: 25px;
+    left: 25px;
+}
+
+button {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    text-align: center;
+    padding: 5px 10px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px green;
+    background-color: red;
+    cursor: pointer;
+}
+
+.new {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+}
+
+.ok {
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orangered;
+}
+
+img {
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.dice1_1 {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    transform: rotate(115deg);
+}
+
+.dice1_2 {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    transform: rotate(135deg);
+}
+
+.dice1_3 {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    transform: rotate(105deg);
+}
+
+.dice1_4 {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    transform: rotate(15deg);
+}
+
+.dice1_5 {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(-15deg);
+}
+
+.dice2_1 {
+
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    transform: rotate(115deg);
+}
+
+.dice2_2 {
+
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    transform: rotate(135deg);
+}
+
+.dice2_3 {
+
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    transform: rotate(105deg);
+}
+
+.dice2_4 {
+
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    transform: rotate(15deg);
+}
+
+.dice2_5 {
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(-15deg);
+}
+
+.star {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+
+}
+
+.star img {
+    border: 0px;
+}
+
+.gray {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.welcome {
+    border: 2px solid black;
+    background-color: yellow;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 150px;
+    z-index: 2;
+}
+
+.hidden {
+    display: none
+}
+
+.star:hover {
+    cursor: pointer;
+}

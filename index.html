@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gra Kości</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gray">
+        <div class="welcome">
+            <p>Witaj w grze kości, podaj imiona graczy:</p><br>
+            <center>
+                <input id="gracz1" type="text" placeholder="Gracz 1"><br>
+                <input id="gracz2" type="text" placeholder="Gracz 2"></center>
+            <button class="ok">OK</button>
+        </div>
+
+
+    </div>
+    <div class="wrapper">
+        <div class="gracz1">
+            <h2></h2>
+            <div class="dices1">
+
+
+            </div>
+            <button class="btn1">RZUT</button>
+            <p class="pkt1">Suma punktów: <span></span></p>
+        </div>
+        <div class="gracz2">
+
+            <h2></h2>
+
+            <div class="dices2"></div>
+            <button class="btn2">RZUT</button>
+            <p class="pkt2">Suma punktów: <span></span></p>
+        </div>
+        <div class="wynik">
+            <p></p>
+            <div class="star hidden"><img src="gold-star.gif" alt=""></div>
+            <button class="new hidden">Nowi gracze</button>
+        </div>
+
+        <script src="game.js"></script>
+</body>
+
+</html>
